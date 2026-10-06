@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션</title>
+    <style>
+        .area{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+        .box{
+            position: static; /* 기본 상태 */
+            top: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(80, 207, 169);
+        }
+        /* .box1{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            width: 150px;
+            height: 150px;
+            background-color: aquamarine;
+        } */
+        .box2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgb(30, 153, 153);
+        }
+    </style>
+</head>
+<body>
+    <!--static : 기본 상태 -->
+    <div class="box"></div>
+    <!--relative : 현재 자기 위치를 기준으로 이동 -->
+    <div class="box1"></div>
+    <!--absolute : 부모요소를 기준으로 원하는 위치에 배치 -->
+    <div class="area">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

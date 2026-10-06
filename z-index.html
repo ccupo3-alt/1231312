@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .box{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+        .box1{
+            top: 50px;
+            left: 50px;
+            background-color: aqua;
+            z-index: 1;
+        }
+        .box2{
+            top: 70px;
+            left: 70px;
+            background-color: aquamarine;
+            z-index: 3;
+        }
+        .box3{
+            top: 100px;
+            left: 100px;
+            background-color: bisque;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- z-index는 겹쳐 있을 때 누가 위에 보일지를 정하는 순서이다. 숫자가 클 수록 위에 보임 / 99,999 등으로 정리를 하기도 함-->
+    <div class="box box1">1번</div>
+    <div class="box box2">2번</div>
+    <div class="box box3">3번</div>
+</body>
+</html>

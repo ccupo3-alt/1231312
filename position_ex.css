@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 카드영역 */
+.contents{
+    position: relative;
+    margin: 0 auto;
+    /* 아래 위는 0, 좌우는 오토 */
+    width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: red;
+}
+.contents img{
+    width: 100%;
+    display: block;
+    /* 설명 놓침.. 무슨 기능일까.. 옆에 아무도 못 옴? */
+}
+.products{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+/* 상품 설명 글자 */
+.text1{
+    color: rgb(241, 0, 93);
+}
+.text3{
+    font-size: 14px;
+    margin: 10px 0;
+}
+/* 금액 영역 */
+.price{
+    display: flex;
+    /* 가로로 나란히 배치 */
+    align-items: center;
+    gap: 5px;
+    /* 요소 간의 간격 */
+}
+.text4{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgb(241, 0, 93);
+}
+.text5{
+    font-size: 16px;
+}

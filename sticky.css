@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 전체 레이아웃 */
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: red;
+}
+/* 헤더 */
+header{
+    padding: 30px;
+    background-color: aqua;
+    text-align: center;
+}
+/* 내비게이션 */
+nav{
+    position: sticky;
+    top: 0px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+    /* 상하 20, 좌우는 안 줌 */
+    display: flex;
+    /* 디스플레이 주면 텍스트 어라인은 적용 안 됨 */
+    justify-content: center;
+    gap: 20px;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+/* a 태그는 따로 컬러 지정해야함 */
+/* 메인 영역 */
+main{
+    display: flex;
+    align-items: flex-start;
+    background-color: beige;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+.sidebar{
+    background-color: aquamarine;
+    width: 30%;
+    position: sticky;
+    top: 64px;
+    /* 화면 위에서 어느정도 떨어진 곳에서 붙을 건지 */
+    padding: 20px;
+}
+.contents{
+    background-color: azure;
+    width: 70%;
+}
+.section{
+    height: 500px
+}
+/* 푸터 */
+footer{
+    padding: 20px;
+    background-color: cadetblue;
+    text-align: center;
+}
